@@ -28,6 +28,7 @@ resource "docker_container" "nginx" {
 
 variable "db_root_password" {
     type = string
+    default = "root"
 }
 
 resource "docker_container" "db" {
